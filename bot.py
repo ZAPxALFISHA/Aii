@@ -1,6 +1,8 @@
 import io
 import logging
-import MetaTrader5 as mt5
+from mt5linux import MetaTrader5
+# mt5linux connect karega localhost par (default port 18812)
+mt5 = MetaTrader5(host='localhost', port=18812)
 import pandas as pd
 import mplfinance as mpf
 from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup
